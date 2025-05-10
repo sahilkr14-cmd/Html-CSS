@@ -1,12 +1,23 @@
-body{
+body {
     background-color: black;
     color: white;
     margin: 0;
     padding: 0;
 
 }
-header::before{
-    background: url(img/arseny-togulev-kGix6_gPKjI-unsplash.jpg) no-repeat center center/cover;
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+
+}
+
+
+header::before {
+    background: url(img/cover.jpg) no-repeat center center/cover;
     content: "";
     position: absolute;
     width: 100%;
@@ -14,28 +25,58 @@ header::before{
     z-index: -2;
     opacity: 0.5;
     top: 0%;
-    
+
 }
-.navigation{
+
+nav {
+    height: 80px;
+}
+
+
+.navigation {
     font-size: 20px;
     display: flex;
-  
+    padding: 0;
+    margin: 0;
+
 }
-li{
+
+.items {
     list-style: none;
-    padding: 34px 24px;
+    padding: 40px;
+    padding-bottom: 0px;
     font-family: "Playwrite IT Moderna", cursive;
 }
-section{
-    height: 280px;
-    margin: 0px 155px;
+
+section {
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center ;
+    text-align: center;
     font-family: "Playwrite IT Moderna", cursive;
 }
-h1{
-    font-size: 4rem;
+
+h1 {
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2.5s steps(20) infinite alternate,
+     infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
+p {
+    font-size: 20px;
 }
